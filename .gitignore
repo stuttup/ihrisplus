@@ -39,3 +39,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Python 
+.env
+__pychache__/
+.eggs/
+*.egg-info
