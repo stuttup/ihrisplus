@@ -42,6 +42,6 @@ Thumbs.db
 
 # Python 
 .env
-__pychache__/
+__pycache__/
 .eggs/
 *.egg-info
