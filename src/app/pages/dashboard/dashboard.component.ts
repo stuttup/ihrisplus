@@ -5,19 +5,20 @@ import { HttpClient } from '@angular/common/http';
   selector: 'ngx-dashboard',
   templateUrl: './dashboard.component.html',
 })
-export class DashboardComponent implements OnInit{
+
+export class DashboardComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   testData: any;
 
-  testApi(){
+  testApi() {
     this.http.get('http://localhost:5000/api/resource/1').subscribe((data) => {
       this.testData = data['timestamp'];
     });
   }
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
+    // Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    // Add 'implements OnInit' to the class.
     this.testApi();
   }
 }

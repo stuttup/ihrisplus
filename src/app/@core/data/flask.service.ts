@@ -5,9 +5,9 @@ import { HttpClient } from '@angular/common/http';
 export class FlaskApiService {
   constructor(private http: HttpClient) { }
 
-  apiUrl = 'localhost:5000/api/resource/1'
+  apiUrl = 'localhost:5000/api/resource/1';
 
-  getResource(){
-      return this.http.get(this.apiUrl)
+  getResource() {
+      return this.http.get(this.apiUrl);
   }
 }
